@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "font";
+    src: url('Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+:root{
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --green: hsl(75, 94%, 57%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'font';
+}
+body{
+    padding: 0 20px 0 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--off-black);
+}
+.card{
+    width: 380px;
+    max-width: 380px;
+    height: 610px;
+    max-height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+}
+img{
+    border-radius: 50%;
+    width: 90px;
+    aspect-ratio: 1/1;
+}
+.fromwhere{
+    text-align: center;
+}
+.fromwhere h1{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.fromwhere p{
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+}
+.desc{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+button{
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    background-color: var(--grey);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+button:hover{
+    background-color: var(--green);
+    color: var(--grey);
+}
+
+@media only screen and (max-width: 500px){
+    .card{
+        padding: 40px 25px 40px 25px;
+    }
+}
